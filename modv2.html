@@ -1,0 +1,50 @@
+<html>
+
+<head>
+<script type="text/javascript">
+
+function BankAcc(accName,accBalance,accNo){
+
+	this.accName=accName;
+	this.accBalance=accBalance;
+	this.accNo=accNo;
+
+	this.withdraw : function(amt){
+			if(amt>0 && (this.accBalance-amt)>0)
+			{
+				this.accBalance=this.accBalance-amt;
+			}
+			return(this.accBalance);
+	},
+	this.deposit : function(amt){
+			if(amt>0)
+			{
+				this.accBalance=this.accBalance+amt;
+			}
+			return(this.accBalance);
+	},
+	this.getAccBal :  function(){
+				return(this.accBalance);
+	}
+	this.getAccNo :  function(){
+				return(this.accNo);
+	}
+};
+
+var account=new BankAcc("Axis",1000,1234);
+
+console.log(BankAcc.deposit(3000));
+console.log(BankAcc.withdraw(2000));
+console.log(BankAcc.getAccBal());
+console.log(BankAcc.getAccNo());
+document.write(BankAcc.deposit(3000)+"<br>");
+document.write(BankAcc.getAccNo());
+
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
