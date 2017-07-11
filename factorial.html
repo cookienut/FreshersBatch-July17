@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script language="JavaScript">
+
+		function findFact()
+		{
+			var fact;
+			var i;
+			var num;
+			
+			num=document.getElementById("textbox1").value;
+			fact=1;
+			for(i=num;i>1;i--)
+			{
+				fact=fact*i;
+			}	
+			document.getElementById("para").innerHTML=fact;
+		}
+	</script>
+<head>
+<body>
+	Enter a number:
+	<input type="text" id="textbox1">
+	<br>
+	<input type="button" value="submit" onclick="findFact()">
+	<br>
+	<br>
+	Factorial: 
+	<p id="para">
+	</p>
+	
+	
+</body>
+</html>

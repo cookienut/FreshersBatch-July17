@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script language="JavaScript">
+		var arr = [3,6,8,2,9,7,4];
+		
+		function ascSort()
+		{
+				for(i=0;i<arr.length-1;i++)
+				{
+						for(j=0;j<arr.length-i-1;j++)
+						{
+							if(arr[j]>arr[j+1])
+							{
+								temp=arr[j];
+								arr[j]=arr[j+1];
+								arr[j+1]=temp;
+							}
+						}
+				}
+				document.getElementById("para").innerHTML="Asc Order: "+arr;
+		}	
+						
+				
+				function descSort()
+				{
+					for(i=0;i<arr.length-1;i++)
+				{
+						for(j=0;j<arr.length-i-1;j++)
+						{
+							if(arr[j]<arr[j+1])
+							{
+								temp=arr[j];
+								arr[j]=arr[j+1];
+								arr[j+1]=temp;
+							}
+						}
+				}
+					document.getElementById("para").innerHTML="Desc Order: "+arr;		
+				}
+
+				</script>
+</head>
+<body>
+	Array:[3,6,8,2,9,7,4]
+	<br><br>
+	<input type="button" value="Asc Sort" onclick="ascSort()">
+	<input type="button" value="Desc Sort" onclick="descSort()">
+	<br>
+	<p id="para">
+	
+	</p>
+	
+	
+</body>
+</html>

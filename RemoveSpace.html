@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script language="JavaScript">
+		
+
+	function rmvSpace()
+	{
+		arr=document.getElementById("textbox").value;
+		//arr=arr.replace(/\s+/,' ', g);
+		document.getElementById("para").innerHTML=arr;
+	}
+	
+
+
+
+	</script>
+</head>
+<body>
+	Please enter a sentence:
+	<br>
+	<input type="text" id="textbox">
+	<br><br>
+	<input type="button" value="Remove Extra Spaces" onclick="rmvSpace()">
+	<br>
+	<p id="para">
+	
+	</p>
+	
+	
+</body>
+</html>

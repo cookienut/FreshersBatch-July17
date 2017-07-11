@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script language="JavaScript">
+		
+		function charCount()
+		{
+				cnt=0;
+				arr=document.getElementById("textbox").value;
+				for(i=0;i<arr.length;i++)
+				{
+					if(arr[i]!=" " && arr[i]!=".")
+						cnt++;
+				}
+				
+				document.getElementById("para").innerHTML="Char count: "+cnt;
+					
+		}	
+
+	</script>
+</head>
+<body>
+	Please enter a sentence:
+	<br>
+	<input type="text" id="textbox">
+	<br><br>
+	<input type="button" value="Count Characters" onclick="charCount()">
+	<br>
+	<p id="para">
+	
+	</p>
+	
+	
+</body>
+</html>

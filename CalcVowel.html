@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script language="JavaScript">
+		
+		function calcVowels()
+		{
+				aCnt=0;
+				eCnt=0;
+				iCnt=0;
+				oCnt=0;
+				uCnt=0;
+
+				arr=document.getElementById("textbox").value;
+				for(i=0;i<arr.length;i++)
+				{
+						if(arr[i]=="a")
+							aCnt++;
+						if(arr[i]=="e")
+							eCnt++;
+						if(arr[i]=="i")
+							iCnt++;
+						if(arr[i]=="o")
+							oCnt++;
+						if(arr[i]=="u")
+							uCnt++;
+				}
+					document.getElementById("para").innerHTML="Occurances: <br> a:"+aCnt+"  e:"+eCnt+"  i:"+iCnt+"  o:"+oCnt+"  u:"+uCnt;
+				
+		}	
+	
+	</script>
+</head>
+<body>
+	Please enter a sentence:
+	<br>
+	<input type="text" id="textbox">
+	<br><br>
+	<input type="button" value="Calculate Vowels" onclick="calcVowels()">
+	<br>
+	<p id="para">
+	
+	</p>
+	
+	
+</body>
+</html>

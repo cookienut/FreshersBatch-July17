@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script language="JavaScript">
+		
+		function validateEmail()
+		{
+		
+				atpos=0;
+				dotpos=0;
+				
+				email=document.getElementById("textbox").value;
+				atpos=email.indexOf("@");
+				dotpos=email.lastIndexOf(".");
+				
+				if(atpos<1 || dotpos<atpos+1 || dotpos+2>=email.length)
+				 alert("Not a valid e-mail address");
+				 else
+				 document.getElementById("para").innerHTML=email;
+				
+		}	
+	
+	</script>
+</head>
+<body>
+	Please enter your email address:
+	<br>
+	<input type="text" id="textbox">
+	<br><br>
+	<input type="button" value="Validate" onclick="validateEmail()">
+	<br>
+	<p id="para">
+	
+	</p>
+	
+	
+</body>
+</html>

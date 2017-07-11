@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script language="JavaScript">
+	
+		var cnt;
+		cnt=0;
+	
+		function login()
+		{
+			username=document.getElementById("uname").value;
+			password=document.getElementById("pword").value;
+			
+			if(username=="xor" && password=="123" && cnt<4)
+			{
+				document.getElementById("para").innerHTML="Login Successful...";
+			}
+			else
+			{
+				cnt++;
+				if(cnt>3)
+				{	
+					window.location="limit.html";
+				}
+				document.getElementById("para").innerHTML="Login UnSuccessful...";
+			}
+		}
+	</script>
+</head>
+<body>
+	Enter Username:
+	<input type="text" id="uname">
+	<br>
+	Enter Password:
+	<input type="password" id="pword">
+	<br>
+	<input type="button" value="Login" onclick="login()">
+	<br>
+	<br>
+	<p id="para">
+	
+	</p>
+	
+	
+</body>
+</html>
