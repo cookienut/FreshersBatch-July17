@@ -1,6 +1,6 @@
 header{
 background-color:black; 
-color:	#303030;
+color:white;
 padding:5px;
 font-size:20px;
 font-family:rockwell;
@@ -10,7 +10,7 @@ margin: 5px 15px 5px 15px;
 
 header.header-content{
 	float:left;
-	background-color:#7CDBD5; 
+	background-color:white; 
 	color:white;
 	padding:5px;
 	font-size:20px;
@@ -19,6 +19,7 @@ header.header-content{
 
 footer{
 background-color:black; 
+color:white;
 padding:8px;
 margin: 5px 15px 5px 15px;
 height:50px;
@@ -103,4 +104,15 @@ div#OR {
     top: 40%;
     z-index: 1;
     background: #DFDFDF;
+}
+
+#animate-area{
+
+background-image: url("https://static.pexels.com/photos/8395/lights-night-unsharp-blured.jpg");
+
+}
+
+nav.container-fluid{
+	
+	color:#white!important;
 }
