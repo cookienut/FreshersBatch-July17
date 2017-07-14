@@ -1,10 +1,11 @@
 header{
-background-color:#7CDBD5; 
-color:black;
+background-color:black; 
+color:	#303030;
 padding:5px;
 font-size:20px;
 font-family:rockwell;
-height:100px;
+height:70px;
+margin: 5px 15px 5px 15px;
 }
 
 header.header-content{
@@ -19,6 +20,8 @@ header.header-content{
 footer{
 background-color:black; 
 padding:8px;
+margin: 5px 15px 5px 15px;
+height:50px;
 }
 
 
@@ -36,8 +39,8 @@ img.slide:hover{
 img.logo
 {
 	border:1px;
-	height:100px;
-	width:150px;
+	height:50px;
+	width:75px;
 	transition: all 0.5s;
 	cursor: pointer;
 	margin: 0px;
@@ -68,7 +71,36 @@ img.logo
 
 .container
 {	
-	height:78%!important ;
+	height:79%!important ;
 	width:100%!important;
 	overflow:hidden!important;
+}
+
+#login_username,#login_password
+{
+	margin-top:10px;
+}
+
+.nav-tabs {
+    margin-bottom: 15px;
+}
+.sign-with {
+    margin-top: 25px;
+    padding: 20px;
+}
+div#OR {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #C2C2C2;
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    float: right;
+    position: absolute;
+    right: -16px;
+    top: 40%;
+    z-index: 1;
+    background: #DFDFDF;
 }
