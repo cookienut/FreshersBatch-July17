@@ -18,13 +18,16 @@ header.header-content{
 }
 
 footer{
-background-color:black; 
+background-color: black;
+text-align: center;
 color:white;
 padding:8px;
 margin: 5px 15px 5px 15px;
-height:50px;
-}
+height : 50px;
+width:98%;
+position:absolute;
 
+}
 
 
 img.slide
@@ -115,4 +118,63 @@ background-image: url("https://static.pexels.com/photos/8395/lights-night-unshar
 nav.container-fluid{
 	
 	color:#white!important;
+}
+
+/* FOR HOMEPAGE IMAGE GRAYSCALE          */
+
+.container-home {
+    position: relative;
+    height:50%;
+	width: 50%;
+	overflow: hidden;
+	float:left;
+}
+
+.image-home {
+  opacity: 1;
+  display: inline;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.container-home:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  /*background-color: #C70039;*/
+  color: white;
+  font-family:Courier New;
+  font-size: 40px;
+  border:2px white solid;
+  padding: 1px 5px 1px 5px;
+}
+
+.text:hover {
+	background-color: #C70039;
+}
+.image-home:hover {
+  -webkit-filter: grayscale(100%); 
+  transition: .5s ease;
+    filter: grayscale(100%);
+  opacity: 1;
+}
+
+/*USER PROFILE*/
+
+.panel-footer{
+	height:50px;
 }

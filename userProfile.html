@@ -12,15 +12,13 @@
 </head>
 
 <body>
-
-		
 		<header>
 				<div class="header-content">
-				
+					<img class="logo" src="http://www.onlinelogomaker.io/wp-content/uploads/2015/08/logo-300x169.png" alt="Website Logo">
+					
 					<nav>
 						<div class="container-fluid">
 							<div class="navbar-header">
-							  <img class="logo" src="http://www.onlinelogomaker.io/wp-content/uploads/2015/08/logo-300x169.png" alt="Website Logo"> 
 							  <a class="navbar-brand" href="#"><b><big>Falcon!</b></big></a>
 							</div>
 							<ul class="nav navbar-nav">
@@ -171,25 +169,145 @@
 					</div>
 
 		</header>
+
 		
-		<div class="container">		
-				<div class="container-home">
-					<img src="https://d1k1w7q5cmafw8.cloudfront.net/public/uploads/course_images/ioa/big/style-you-home.jpg" alt="Buyer" class="image-home">
-					<div class="middle">
-						<div class="text"><b>Buyer</b></div>
-					</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5  toppad  pull-right col-md-offset-3 ">
+				<br>
 				</div>
-				<div class="container-home">
-					<img src="https://s-media-cache-ak0.pinimg.com/originals/63/bc/65/63bc65680fc70bab57f04fe85cd32e72.jpg" alt="Seller" class="image-home">
-					<div class="middle">
-						<div class="text"><b>Seller</b></div>
-					</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+   
+   
+		<div class="panel panel-info" style="background-color: #aed6f1!important;">
+            <div class="panel-heading">
+              <h3 class="panel-title">User Profile</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="http://www.hawtcelebs.com/wp-content/uploads/2016/01/emma-watson-by-carter-bowman-photoshoot_1.jpg" class="img-circle img-responsive"> </div>
+                
+
+                <div class=" col-md-9 col-lg-9 "> 
+                  <table class="table table-user-information">
+                    <tbody>
+                      <tr>
+                        <td>Name:</td>
+                        <td>Emma Watson</td>
+                      </tr>
+                      <tr>
+                        <td>Username:</td>
+                        <td>Hermione27</td>
+                      </tr>
+                      <tr>
+                        <td>Email:</td>
+                        <td><a href="mailto:info@support.com">hermione17@gmail.com</a></td>
+                      </tr>
+					<tr>
+                        <td>Contact Number:</td>
+                        <td>123-4567-890(Landline)<br><br>555-4567-890(Mobile)
+                        </td>                  
+                      </tr>
+                    </tbody>
+                  </table>
 				</div>
+              </div>
+            </div>
+            <div class="panel-footer" style="background-color: #d6eaf8!important;">
+                        <span class="pull-right">
+                            <a href="edit.html" data-original-title="show adds" data-toggle="tooltip" type="button" class="btn btn-sm btn-success">My Posts&nbsp<i class="glyphicon glyphicon-info-sign"></i></a>
+							<a href="edit.html" data-original-title="Edit this user" data-toggle="modal" data-target="#myModal1" type="button" class="btn btn-sm btn-warning">Edit Profile&nbsp<i class="glyphicon glyphicon-edit"></i></a>
+                            <a href="home.html" data-original-title="logout" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"> Log Out &nbsp <i class="glyphicon glyphicon-remove"></i></a>
+                        </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+		
+		
+	<!-- Modal content for Editing User-->
+
+	<div id="myModal1" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h4 class="modal-title">Edit your Info</h4>
+		  </div>
+		  <div class="modal-body">
+			
+			
+			
+			
+			
+			<form role="form" class="form-horizontal">
+													<div class="form-group">
+														<label for="firstname" class="col-sm-3 control-label">
+															First name:</label>
+														<div class="col-sm-9">
+															<input type="firstname" class="form-control" id="fname" value="Emma" />
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="lastname" class="col-sm-3 control-label">
+															Last name:</label>
+														<div class="col-sm-9">
+															<input type="lastname" class="form-control" id="lname" value="Watson" />
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="username" class="col-sm-3 control-label">
+															Username:</label>
+														<div class="col-sm-9">
+															<input type="username" class="form-control" id="uname" value="Hermione27" />
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="password" class="col-sm-3 control-label">
+															Password:</label>
+														<div class="col-sm-9">
+															<input type="password" class="form-control" id="pword" value="abc123" />
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="email" class="col-sm-3 control-label">
+															Enter Email:</label>
+														<div class="col-sm-9">
+															<input type="email" class="form-control" id="email" value="hermione17@gmail.com" />
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-sm-3">
+														</div>
+														<div class="col-sm-9">
+															<button type="submit" class="btn btn-primary btn-sm">
+																Save Changes</button>
+														</div>
+													</div>
+			</form>			
+			
+			
+			
+			
+			
+			
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  </div>
 		</div>
 
-		<footer>
+		</div>
+	</div>
+		
+
+
+	<footer>
 				<div class="header-content">
-					&copy; 2017 TheFalcon.com &nbsp|&nbsp All Rights Reserved.		
+					Copyright Sagar Bhat.
 				</div>	
 		</footer>
 
