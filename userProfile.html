@@ -8,11 +8,14 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+	
 </head>
 
 <body>
 		<header>
+				<div id="abc">
+				hehe
+				</div>
 				<div class="header-content">
 					<img class="logo" src="http://www.onlinelogomaker.io/wp-content/uploads/2015/08/logo-300x169.png" alt="Website Logo">
 					
@@ -215,8 +218,8 @@
             </div>
             <div class="panel-footer" style="background-color: #d6eaf8!important;">
                         <span class="pull-right">
-                            <a href="edit.html" data-original-title="show adds" data-toggle="tooltip" type="button" class="btn btn-sm btn-success">My Posts&nbsp<i class="glyphicon glyphicon-info-sign"></i></a>
-							<a href="edit.html" data-original-title="Edit this user" data-toggle="modal" data-target="#myModal1" type="button" class="btn btn-sm btn-warning">Edit Profile&nbsp<i class="glyphicon glyphicon-edit"></i></a>
+                            <a data-original-title="show adds" data-toggle="modal" data-target="#myModal2	" type="button" class="btn btn-sm btn-success">My Posts&nbsp<i class="glyphicon glyphicon-info-sign"></i></a>
+							<a data-original-title="Edit this user" data-toggle="modal" data-target="#myModal1" type="button" class="btn btn-sm btn-warning">Edit Profile&nbsp<i class="glyphicon glyphicon-edit"></i></a>
                             <a href="home.html" data-original-title="logout" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"> Log Out &nbsp <i class="glyphicon glyphicon-remove"></i></a>
                         </span>
             </div>
@@ -238,9 +241,6 @@
 			<h4 class="modal-title">Edit your Info</h4>
 		  </div>
 		  <div class="modal-body">
-			
-			
-			
 			
 			
 			<form role="form" class="form-horizontal">
@@ -288,11 +288,7 @@
 														</div>
 													</div>
 			</form>			
-			
-			
-			
-			
-			
+
 			
 		  </div>
 		  <div class="modal-footer">
@@ -302,12 +298,85 @@
 
 		</div>
 	</div>
+	
+	
+	
+	
+	<!-- Modal content for Editing Adds-->
+
+	<div id="myModal2" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="modal-title">Hi Emma! Your Posted Adds.</h4>
+			</div>
+		 
+
+			<div class="modal-body">
+		 
+			<div class="container">
+        
+			<table class="table table-hover">
+				<thead>
+					<tr>
+					  <th>#</th>
+					  <th>Date Posted</th>
+					  <th>Name</th>
+					  <th>Edit</th>
+					  <th>Remove</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+					  <td>1</td>
+					  <td>21-09-16</td>
+					  <td>Dell 18.5" Laptop</td>
+					  <td><a href="EditAdd.html" type="button" class="btn btn-sm btn-warning">Edit Add&nbsp<i class="glyphicon glyphicon-edit"></i></a></td>
+					  <td><a type="button" class="btn btn-sm btn-danger">Remove&nbsp<i class="glyphicon glyphicon-remove"></i></a></td>	
+					</tr>
+					<tr>
+					  <td>2</td>
+					  <td>20-12-16</td>
+					  <td>Intel Core i5</td>
+					  <td><a href="EditAdd.html" type="button" class="btn btn-sm btn-warning">Edit Add&nbsp<i class="glyphicon glyphicon-edit"></i></a></td>
+					  <td><a type="button" class="btn btn-sm btn-danger">Remove&nbsp<i class="glyphicon glyphicon-remove"></i></a></td>	
+					</tr>
+					<tr>
+					  <td>3</td>
+					  <td>18-01-17</td>
+					  <td >Gaming Keyboard G510</td>
+					   <td><a href="EditAdd.html" type="button" class="btn btn-sm btn-warning">Edit Add&nbsp<i class="glyphicon glyphicon-edit"></i></a></td>
+					  <td><a type="button" class="btn btn-sm btn-danger">Remove&nbsp<i class="glyphicon glyphicon-remove"></i></a></td>	
+					</tr>
+					
+					<tr>
+					  <td>4</td>
+					  <td>11-03-17</td>
+					  <td>Iphone 5s 32GB</td>
+					   <td><a href="EditAdd.html" type="button" class="btn btn-sm btn-warning">Edit Add&nbsp<i class="glyphicon glyphicon-edit"></i></a></td>
+					  <td><a type="button" class="btn btn-sm btn-danger">Remove&nbsp<i class="glyphicon glyphicon-remove"></i></a></td>	
+					</tr>       
+				</tbody>
+			</table>    
+			</div>	
+		</div>
 		
+		<div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		</div>
+		
+		</div>
+		</div>
+	</div>
+			
 
 
 	<footer>
 				<div class="header-content">
-					Copyright Sagar Bhat.
+					&copy; 2017 TheFalcon.com &nbsp|&nbsp All Rights Reserved.		
 				</div>	
 		</footer>
 
