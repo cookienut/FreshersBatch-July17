@@ -24,6 +24,7 @@ color:white;
 padding:8px;
 margin: 5px 15px 5px 15px;
 height : 50px;
+left:5px;
 width:98%;
 position:absolute;
 
@@ -111,8 +112,8 @@ div#OR {
 
 #animate-area{
 
-background-image: url("https://static.pexels.com/photos/8395/lights-night-unsharp-blured.jpg");
-
+background-image: url("http://www.nickborelli.com/wp-content/uploads/2015/01/grey-gradient-abstract-hd-wallpaper-1920x1200-4431.jpg");
+margin: 0px 15px 0px 15px;
 }
 
 nav.container-fluid{
@@ -123,6 +124,7 @@ nav.container-fluid{
 /* FOR HOMEPAGE IMAGE GRAYSCALE          */
 
 .container-home {
+	background-color:blue;
     position: relative;
     height:50%;
 	width: 50%;
@@ -130,7 +132,19 @@ nav.container-fluid{
 	float:left;
 }
 
-.image-home {
+.image-home-sell {
+  opacity: 1;
+  display: inline;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  bottom:-150px;
+  left:-80px;
+  transform: scale(1.4);
+}
+.image-home-buy {
   opacity: 1;
   display: inline;
   position: absolute;
@@ -139,6 +153,7 @@ nav.container-fluid{
   transition: .5s ease;
   backface-visibility: hidden;
 }
+
 
 .middle {
   transition: .5s ease;
@@ -166,7 +181,14 @@ nav.container-fluid{
 .text:hover {
 	background-color: #C70039;
 }
-.image-home:hover {
+.image-home-sell:hover {
+  -webkit-filter: grayscale(100%); 
+  transition: .5s ease;
+    filter: grayscale(100%);
+  opacity: 1;
+  
+}
+.image-home-buy:hover {
   -webkit-filter: grayscale(100%); 
   transition: .5s ease;
     filter: grayscale(100%);
@@ -177,4 +199,67 @@ nav.container-fluid{
 
 .panel-footer{
 	height:50px;
+}
+
+/*FOR CATEGORIES*/
+
+.catg{
+	
+	height: 60px;
+	width: 60px;
+	display: inline;
+	margin: 20px 13px 20px 10px;
+	border-radius:50px;
+}
+
+.catg:hover{
+	
+	height: 60px;
+	width: 60px;
+	display: inline;
+	margin: 20px 13px 20px 10px;
+	border-radius:5px;
+}
+
+
+.cat-container{
+	background-color:white;
+	margin-top:50px;
+    position: relative;
+    height:20%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.category{
+	margin-top:5px;
+	background-color:black;
+}
+
+
+/* FOR FURNITURE CAT*/
+
+.imgs{
+	
+	height: 200px;
+	width: 200px;
+	margin:0px 20px 0px 50px;
+	border:2px white solid;
+}
+
+.desc{
+	text-align:center;
+	color:white;
+	background-color:black;
+	font-family:Lucida Sans Unicode;
+	margin:2px 5px 20px 0px;
+	border: 1px white solid;
+}
+.desc:hover{
+	text-align:center;
+	color:#99ccff;
+	background-color:#484848;
+	font-family:Lucida Sans Unicode;
+	margin:2px 5px 20px 0px;
+	border: 1px white solid;
 }
