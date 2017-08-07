@@ -74,28 +74,86 @@ class List{
 		
         Node nptr = new Node(null,val,null);  
 		int i=1;
+		 
 		
         if(pos == 1)
         {
-			nptr.setNext()=start;
-			start.setPrev()=nptr();
+			nptr.setNext(start);
+			start.setPrev(nptr);
 			start=nptr;
+			this.size++;
 			return;
         }
         else
         {
-			for(i=2;i<this.countNode();i++){
-				
+		
+			Node ptr = start;
+			for(i=2;i<=this.size;i++){
+				Node newptr=ptr.getNext();
 				if(i==pos){
-					nptr.setPrev(end);
-					end.setNext(nptr);
-					end = nptr;
+					
+					nptr.setNext(newptr);
+					nptr.setPrev(ptr);
+					ptr.setNext(nptr);
+					newptr.setPrev(nptr);
+					this.size++;
 					return;
 				}
+				ptr=newptr;	
 				
-			}
+			}	
+			
         }
-        this.size++;
+    }
+	
+	
+	public void deleteFromPos(int pos)
+    {
+		
+		int i=1;
+		 
+		if(pos == this.countNode())
+        {
+			Node ptr = end.getPrev();
+			end.setPrev(null);
+			ptr.setNext(null);
+			end=ptr;
+			
+			this.size--;
+			return;
+        }
+
+		if(pos == 1)
+        {
+			Node ptr = start.getNext();
+			ptr.setPrev(null);
+			start.setNext(null);
+			start=ptr;
+			
+			this.size--;
+			return;
+        }
+        else
+        {
+		
+			Node ptr = start;
+			for(i=2;i<=this.size;i++){
+				Node newptr=ptr.getNext();
+				if(i==pos){
+					
+					ptr.setNext(newptr.getNext());
+					(newptr.getNext()).setPrev(ptr);
+					newptr.setNext(null);
+					newptr.setPrev(null);
+					
+					this.size--;
+					return;
+				}
+				ptr=newptr;	
+				
+			}	
+			
+        }
     }
 	
 	public void insert(int val)
@@ -174,15 +232,31 @@ public class DLinkList{
 	public static void main(String args[])
 		{
 			List dll = new List();
+			
+			int lastNodeNo;
+			
 			dll.insert(10);
 			dll.insert(30);
 			dll.insert(40);
+			dll.insert(50);
 			dll.insert(60);
+			
 			
 			dll.displayForward();
 			dll.displayBackward();
 
+			System.out.print("\nInserting 20 at position 2:");
 			dll.insertAtPos(2,20);	
+			dll.displayForward();
+			
+			System.out.print("\nDeleting from last position :");
+			lastNodeNo=dll.countNode();
+			
+			dll.deleteFromPos(lastNodeNo);	
+			dll.displayForward();
+			
+			System.out.print("\nDeleting from position 2:");
+			dll.deleteFromPos(2);	
 			dll.displayForward();
 			
 			System.out.println("\nNumber of Nodes: "+dll.countNode());
