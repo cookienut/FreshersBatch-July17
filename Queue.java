@@ -12,8 +12,14 @@ public class Queue{
 	
 	public void enqueue(int newElement){
 		
-		arr[rear]=newElement;
-		rear++
+		if(rear<MAXLENGTH){
+			arr[rear]=newElement;
+			rear++;
+		}	
+		else{
+			System.out.println("The Queue is Full !");
+		}
+			
 	}
 	
 	
